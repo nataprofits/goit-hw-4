@@ -212,10 +212,12 @@ p {
     margin-top: 48px;
 }
 
-.button:hover,
-.button:focus {
-    background-color: var(--link-text-color);
+.button-hero:hover,
+.button-hero:focus {
+    background-color:#404BBF;
     color: var(--primari-bg-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 }
 
 .section-title {
@@ -379,7 +381,7 @@ height: 16px;
 /* Клиенты */
 
 .list-clients {
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     display: flex;
     margin-top: 72px;
 }
@@ -390,11 +392,19 @@ height: 16px;
     width: 168px;
     height: 88px;
     margin-right: var(--card-set-gap);
-outline: 2px solid tomato;
+/* outline: 2px solid tomato; */
 align-items: top;
+border: 1px solid #8E8F99;
+    border-radius: 4px;
 }
 .icon-client {
    display: block;
+   fill: #8E8F99;
+
+}
+.icon-client:hover,
+.icon-client:focus {
+    fill: #4D5AE5;
 }
 
 /* Button */
@@ -442,10 +452,18 @@ align-items: top;
     margin-left: var(--card-set-gap);
     margin-bottom: 48px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    border: 0.5px solid #F4F4FD;
 }
 
 .product-item:nth-child(3n) {
     margin-right: 0px;
+}
+.product-item:hover,
+.product-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08); ;
+        background-color: #FFFFFF;
 }
 
 .card-content {
@@ -490,7 +508,7 @@ align-items: top;
 
 .footer {
     background-color: var(--heading-text-color);
-
+display: flex;
     padding: 100px 0px;
 }
 
