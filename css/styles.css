@@ -358,18 +358,22 @@ p {
 }
 .team-soc-item {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid tomato;
+    border-radius: 50%;
+    background-color: #4D5AE5;
     
 }
 
 .icon-team {
-    background-color: #4D5AE5;
-
-    fill: black;
+ fill: #F4F4FD;
+width: 16px;
+height: 16px;
 }
    
 /* Клиенты */
@@ -380,17 +384,17 @@ p {
     margin-top: 72px;
 }
 .client-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 168px;
+    height: 88px;
     margin-right: var(--card-set-gap);
 outline: 2px solid tomato;
 align-items: top;
 }
 .icon-client {
-    width: 104px;
-    height: 56px;
-    padding-top: 3px;
-    padding-left: 33px;
-    margin: 16px 32px;
+   display: block;
 }
 
 /* Button */
