@@ -137,9 +137,7 @@ p {
 .site-nav .link:focus {
     color: var(--link-text-color);
 }
-.site-nav>.item:hover{
-text-decoration: underline;
-}
+
 
 .auth-nav {
     display: flex;
@@ -237,32 +235,41 @@ text-decoration: underline;
     flex-wrap: wrap;
 }
 
-.item-feature::before {
+/* .item-feature::before {
     display: block;
     content: "";
     height: 112px;
     background-size: 64px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--color-batton-filtr);
-}
-.icon-strategy::before {
-    content: "";
-    background-image: url(../img/antenna\ 1.svg);
-}
-.icon-punctuality::before {
-    content: "";
-    background-image: url(../img/clock\ 1.svg);
-}
-.icon-diligence::before {
-    content: ("");
-    background-image: url(../img/diagram\ 1.svg);
-}
-.icon-technologies::before {
-    content: "";
-    background-image: url(../img/astronaut\ 1.svg);
+    background-color: var(--color-batton-filtr); */
+
+.icon-feature {
+    display: flex;
+ background-color: #F4F4FD;
+ width: 264px;
+ height: 112px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+ 
 
 }
+.icon-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    fill: #8E8F99;
+     
+}
+/* .icon-strategy::before {
+    content: "";
+    background-image: url(../img/antenna\ 1.svg);
+} */
+
+    
 .item-feature {
     width: calc((100% - 72px) / 4);
     margin-right: 24px;
@@ -362,19 +369,23 @@ text-decoration: underline;
     align-items: center;
 }
 .team-soc-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     width: 40px;
     height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 2px solid tomato;
-    border-radius: 50%;
-    background-color: #4D5AE5;
-    
+    margin-right: 24px;
+    }
+.team-soc-item:nth-child(4){
+    margin-right: 0px;
 }
-
+.soc-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+   background-color: #4D5AE5;
+    border-radius: 50%;
+}
 .icon-team {
  fill: #F4F4FD;
 width: 16px;
@@ -390,18 +401,26 @@ height: 16px;
 }
 .client-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
+   
     width: 168px;
     height: 88px;
     margin-right: var(--card-set-gap);
- border: 1px solid #8E8F99;
-    border-radius: 4px;
+ 
 }
 .icon-client {
    display: block;
    fill: #8E8F99;
 
+}
+.icom-client {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-right: var(--card-set-gap);
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
 }
 .icon-client:hover,
 .icon-client:focus {
@@ -425,6 +444,9 @@ height: 16px;
 .button:focus {
     background-color: var(--link-text-color);
     color: var(--primari-bg-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Проекты */
@@ -509,8 +531,10 @@ height: 16px;
 
 .footer {
     background-color: var(--heading-text-color);
-    display: flex;
     padding: 100px 0px;
+}
+.footer-conteiner {
+    display: flex;
 }
 
 .footer-text {
