@@ -583,3 +583,6 @@ align-items: center;
 align-items: center;
 fill: #F4F4FD;
 }
+.footer-item:hover {
+    background-color: #31D0AA;
+}
