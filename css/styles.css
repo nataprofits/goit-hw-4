@@ -388,7 +388,7 @@ p {
     border-radius: 50%;
 }
 .soc-link:hover {
-    background-color: #31D0AA;
+    background-color: #404BBF;
 }
 .icon-team {
  fill: #F4F4FD;
@@ -409,7 +409,7 @@ height: 16px;
 }
 .icon-client {
    display: block;
-   fill: #8E8F99;
+   /* fill: #8E8F99; */
 
 }
 .icom-client {
@@ -421,6 +421,7 @@ height: 16px;
         margin-right: var(--card-set-gap);
         border: 1px solid #8E8F99;
         border-radius: 4px;
+        fill:#8E8F99 ;
 }
 .icom-client:hover,
 .icom-client:focus {
@@ -479,7 +480,7 @@ height: 16px;
     margin-left: var(--card-set-gap);
     /* margin-bottom: 48px; */
     /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
-    /* border: 0.5px solid #F4F4FD; */
+     border: 1px solid rgba(231, 233, 252, 1); 
 
 }
 .project-link {
@@ -601,4 +602,22 @@ fill: #F4F4FD;
 .footer-soc-link:hover,
 .footer-soc-link:focus {
     background-color: #31D0AA;
+}
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    outline: tomato solid 1px;
+    margin-left: -24px;
+}
+.item-portfolio {
+    box-sizing: border-box;
+    outline: green solid 1px;
+   margin-bottom: 24px;
+   margin-right: 24px;
+}
+.card-thumb {
+
+}
+.link-portfolio {
+    text-decoration: none;
 }
