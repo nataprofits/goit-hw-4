@@ -230,7 +230,7 @@ p {
     color: var(--primari-bg-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/* .modal {
+ /* .modal {
     position: absolute;
     width: 408px;
     height: 576px;
@@ -239,8 +239,8 @@ p {
     transform: translate(-50%, -50%);
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-} */
+    border-radius: 4px; */
+} 
 
 .section-title {
     color: #2E2F42
@@ -407,9 +407,9 @@ p {
    background-color: #4D5AE5;
     border-radius: 50%;
 }
-.soc-link:hover
+.soc-link:hover,
 .soc-link:focus {
-    background-color: #404BBF;
+  background-color: #404BBF;
 }
 .icon-team {
  fill: #F4F4FD;
