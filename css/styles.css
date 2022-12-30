@@ -142,6 +142,7 @@ p {
     height: 4px;
     background-color: #404BBF;
     border-radius: 2px;
+
 }
 
 .site-nav .link:hover,
@@ -564,9 +565,9 @@ margin-right: 0px;
     color: var(--fotter-color);
 }
 .footer-about{
-    display: block;
+
     width: 264px;
-    margin-left: 156px;
+  
 }
 .footer-social {
 display: block;
